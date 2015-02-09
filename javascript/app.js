@@ -85,7 +85,7 @@ var Dropdown = function ($scope){
   $scope.linkItems = {
     "Google": "http://google.com",
     "AltaVista": "http://altavista.com"
-  };    
+  };
 };
 
 
