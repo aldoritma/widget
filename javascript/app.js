@@ -18,12 +18,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('payment.method', {
             url: '/method',
             templateUrl: 'views/payment-method.html'
+
         })
 
         // url will be /form/interests
         .state('payment.profile', {
             url: '/profile',
-            templateUrl: 'views/form-profile.html'
+            templateUrl: 'views/form-profile.html',
+            controller: 'formController'
         })
 
         // url will be /form/payment
@@ -43,7 +45,9 @@ var formController = function ($scope)
 {
   // Initialize the model variables
 
-
+  $scope.done = function (event){
+     $(event.target).addClass('done');
+  };
 
   // function to process the form
   $scope.processForm = function() {

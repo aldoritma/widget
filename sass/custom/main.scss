@@ -38,6 +38,7 @@ footer{
   padding-bottom: 30px;
   background-color: scale-color($white, $lightness: -5%);
   @include box-shadow(1px 1px 3px rgba(0,0,0,.3));
+  margin-bottom: 20px;
   .title{
     background-color: scale-color($white, $lightness: -70%);
     padding: 10px;
@@ -55,6 +56,7 @@ form{
   padding: 10px !important;
   @include box-shadow(1px 0 3px rgba(#000,.4));
   @include vendor(border-radius, 5px);
+  border-top: solid 5px #000;
 }
 
 
@@ -62,7 +64,7 @@ form{
   background: scale-color($white, $lightness: -40%);
 }
 #form-views{
-  background: scale-color($white, $lightness: -5%);
+  background: scale-color($white, $lightness: 100%);
   padding: 30px 20px;
 }
 .page-header{
