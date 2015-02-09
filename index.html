@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="stylesheet/app.css">
+
+</head>
+
+<!-- apply our angular app -->
+<body ng-app="formApp">
+
+    <div ng-include="'views/partials/header.html'"></div>
+    <div class="container">
+
+        <!-- views will be injected here -->
+        <div ui-view></div>
+
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="column small-12">
+          <p class="text-center"><small>Info  Email <a href="javascript:;">support@loket.com</a>, Twitter<a href="javascript:;">@loketid</a>,  Phone (021) 920 920 19</small></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <!-- load angular, nganimate, and ui-router -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+    <script src="bower_components/angular-foundation/mm-foundation.min.js"></script>
+    <script src="bower_components/angular-foundation/mm-foundation-tpls.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+</html>

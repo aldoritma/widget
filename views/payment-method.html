@@ -1,0 +1,79 @@
+<div class="row">
+  <div class="small-12 column">
+    <div class="payment-wrapper">
+      <div class="title">
+        <h4 class="text-center">Pilihlah Cara Pembayaran yang Anda Mau Pakai</h4>
+      </div>
+      <div ng-controller="Accordion">
+
+        <accordion close-others="oneAtATime">
+
+          <accordion-group is-open="false">
+            <accordion-heading>
+              <input type="radio" id="atm"><label for="atm">ATM</label>
+            </accordion-heading>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Jenis Tiket</th>
+                  <th width="200">Kuota</th>
+                  <th width="350">Harga</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>GA IDR 500.000 (Tax Included) + Admin Fee IDR 25.000</td>
+                  <td> 2</td>
+                  <td>@ Rp 525.000,00</td>
+                </tr>
+                <tr>
+                  <td>Biaya Tambahan</td>
+                  <td>1</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+              </tbody>
+            </table>
+          </accordion-group>
+
+          <accordion-group is-open="isopen">
+              <accordion-heading>
+                  <input type="radio" id="kartukredit"><label for="kartukredit">Kartu Kredit</label>
+              </accordion-heading>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Jenis Tiket</th>
+                    <th width="200">Kuota</th>
+                    <th width="350">Harga</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>GA IDR 500.000 (Tax Included) + Admin Fee IDR 25.000</td>
+                    <td> 2</td>
+                    <td>@ Rp 525.000,00</td>
+                  </tr>
+                  <tr>
+                    <td>Biaya Tambahan</td>
+                    <td>1</td>
+                    <td>Content Goes Here</td>
+                  </tr>
+                  <tr>
+                    <td>Total</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+          </accordion-group>
+        </accordion>
+      </div>
+    </div>
+  </div>
+</div>

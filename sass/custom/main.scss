@@ -1,0 +1,155 @@
+$oldie: true;
+
+
+
+@mixin vendor($property, $value...) {
+    -webkit-#{$property}:$value;
+      @if $oldie {
+       -moz-#{$property}:$value;
+      }
+            #{$property}:$value;
+}
+
+@mixin box-shadow($shadow...) {
+  @include vendor(box-shadow, $shadow);
+}
+
+
+
+body{
+  background: scale-color($white, $lightness: -10%);
+}
+
+footer{
+  background-color: scale-color($white,$lightness: -10%);
+  padding: 50px 0;
+  margin-top: 60px;
+}
+.content-container{
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.payment-wrapper{
+  border: solid 1px scale-color($white, $lightness: -20);
+  padding-bottom: 30px;
+  background-color: scale-color($white, $lightness: -5%);
+  @include box-shadow(1px 1px 3px rgba(0,0,0,.3));
+  .title{
+    background-color: scale-color($white, $lightness: -70%);
+    padding: 10px;
+      h4{
+        color: scale-color($white, $lightness: -7%);
+      }
+  }
+  ul{
+    margin-left: 0;
+  }
+}
+form{
+  margin-bottom: 20px;
+  border: solid 1px scale-color($white, $lightness: -20%);
+  padding: 10px !important;
+  @include box-shadow(1px 0 3px rgba(#000,.4));
+  @include vendor(border-radius, 5px);
+}
+
+
+.content{
+  background: scale-color($white, $lightness: -40%);
+}
+#form-views{
+  background: scale-color($white, $lightness: -5%);
+  padding: 30px 20px;
+}
+.page-header{
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600);
+
+$blue: hsl(206,72%,68%);
+$green: hsl(120,42%,54%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(226,10%,55%);
+$disa: hsl(226,15%,83%);
+
+body {
+  background-color: hsl(0, 0%, 90%);
+
+  font-family: 'Open Sans', sans-serif;
+}
+#steps {
+  width: 505px;
+  margin: 50px auto;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+  display: inline-block;
+  border: 4px solid;
+  border-color: transparent;
+  border-radius: 50%;
+
+  color: $disa;
+  font-weight: 600;
+  text-align: center;
+  line-height: 35px;
+}
+.step:first-child {
+  line-height: 40px;
+}
+.step:nth-child(n+2) {
+  margin: 0 0 0 100px;
+  transform: translate(0, -4px);
+}
+.step:nth-child(n+2):before {
+  width: 75px;
+  height: 3px;
+  display: block;
+  background-color: $white;
+  transform: translate(-95px, 21px);
+  content: '';
+}
+.step:after {
+  width: 150px;
+  display: block;
+  transform: translate(-55px, 3px);
+
+  color: $grey;
+  content: attr(data-desc);
+  font-weight: 400;
+  font-size: 13px;
+}
+.step:first-child:after {
+  transform: translate(-55px, -1px);
+}
+.step.active {
+  border-color: $blue;
+
+  color: $blue;
+}
+.step.active:before {
+  background: linear-gradient(to right, $green 0%,
+                                        $blue 100%);
+}
+.step.active:after {
+  color: $blue;
+}
+.step.done {
+  background-color: $green;
+  border-color: $green;
+
+  color: $white;
+}
+.step.done:before {
+  background-color: $green;
+}
