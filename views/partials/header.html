@@ -1,27 +1,51 @@
 <header>
-  <nav data-topbar="" role="navigation" class="top-bar">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="#">BECOME ONE - JAKARTA ELECTRONIC DANCE MUSIC</a></h1>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    </ul>
-    <section class="top-bar-section">
-      <ul class="right">
-        <li><a data-dropdown="cart" aria-controls="cart" aria-expanded="cart">Price <span><img src='images/cart.png'></span></a>
-          <div id="cart" data-dropdown-content="data-dropdown-content" aria-hidden="true" tabindex="-1" class="f-dropdown content">
-            <p>lorem i</p>
-          </div>
+    <nav data-topbar="" role="navigation" class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">BECOME ONE - JAKARTA ELECTRONIC DANCE MUSIC</a></h1>
         </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
-    </section>
-  </nav>
-  <nav>
-    <div class="row">
-      <div class="small-12 medium-8 column">
-        <p><small> Info Support: Email support@loket.com, Twitter @loketid, Phone (021) 920 920 19 </small></p>
+      <section ng-controller="Dropdown" data-options="align:left" class="top-bar-section">
+        <ul class="right">
+          <li><a dropdown-toggle="#cart">Price <span><img src='images/cart.png'></span></a></li>
+          <div id="cart" class="f-dropdown">
+            <table>
+              <thead>
+                <tr>
+                  <th width="200">Table Header</th>
+                  <th>Table Header</th>
+                  <th width="150">Table Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+        </ul>
+      </section>
+    </nav>
+    <nav>
+      <div class="row">
+        <div class="small-12 medium-8 column">
+          <p><small> Info Support: Email support@loket.com, Twitter @loketid, Phone (021) 920 920 19 </small></p>
+        </div>
+        <div class="small-12 medium-4 column"><a href="">Change Language</a></div>
       </div>
-      <div class="small-12 medium-4 column"><a href="">Change Language</a></div>
-    </div>
-  </nav>
+    </nav>
 </header>

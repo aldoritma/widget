@@ -6,5 +6,5 @@ bower
 
 ## init
 '''
-npm install && bower install
+npm install
 grunt watch // for compiler sass
