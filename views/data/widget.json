@@ -1,0 +1,44 @@
+{"widget":
+  {"http_response":[
+      { "is_ok": true,
+        "is_success": true,
+        "is_redirection": false,
+        "is_redirect": false,
+        "is_forbidden": false,
+        "is_not_found": false,
+        "is_client_error": false,
+        "is_server_error": false }
+  ]},
+  "data":[
+  { "payment_id": "1444",
+    "payment_method_id": "5",
+    "payment_method_info": null,
+    "payment_method_info2": "9",
+    "payment_method_info3": null,
+    "payment_status": "1",
+    "payment_method_key": "ONLINE",
+    "payment_method_value": "Veritrans"
+  },
+  { "payment_id": "1445",
+    "payment_method_id": "4",
+    "payment_method_info": "PT. Global Loket Sejahtera\r\nBANK : BCA (Branch Mall Pondok Indah)\r\nAccount : 731.033.7344 \r\n",
+    "payment_method_info2": null,
+    "payment_method_info3": null,
+    "payment_status": "0",
+    "payment_method_key": "OFFLINE",
+    "payment_method_value": "Bank Transfer"
+    },
+    { "payment_id": "1446",
+      "payment_method_id": "9",
+      "payment_method_info": "",
+      "payment_method_info2": null,
+      "payment_method_info3": null,
+      "payment_status": "0",
+      "payment_method_key": "ONLINE",
+      "payment_method_value": "VA Permata"
+     }
+    ],
+      "inquiry":{
+        "status_message":"success"
+      }
+}

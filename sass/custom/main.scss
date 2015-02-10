@@ -1,4 +1,4 @@
-$oldie: true;
+$oldie: atrue;
 
 
 
@@ -154,4 +154,45 @@ body {
 }
 .step.done:before {
   background-color: $green;
+}
+
+
+.maps-container{
+  margin: 40px;
+}
+
+.legend-container{
+  a{
+    background-color: rgba(#3d3d3d,.2);
+    padding: 5px 10px;
+    font-size: rem-calc(12);
+    font-weight: bold;
+    color: #3d3d3d;
+    display: block;
+    span {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 10px;
+      @include vendor(border-radius, 100%);
+        &.vip{
+          background: #F47216;
+        }
+        &.platinum{
+          background:#656262;
+        }
+        &.gold{
+          background:#D5B066
+        }
+        &.class1{
+          background:#54C4D1;
+        }
+        &.class2{
+          background:#AE3F9D;
+        }
+        &.class3{
+          background:#D9E696;
+        }
+    }
+  }
 }
