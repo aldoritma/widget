@@ -1,0 +1,23 @@
+{
+  "name": "widget-angular",
+  "version": "0.0.0",
+  "homepage": "https://github.com/aldoritma/widget",
+  "authors": [
+    "aldoariandhika@gmail.com <aldoariandhika@gmail.com>"
+  ],
+  "description": "payment method loket",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1"
+  }
+}
