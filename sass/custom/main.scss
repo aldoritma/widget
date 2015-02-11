@@ -196,3 +196,18 @@ body {
     }
   }
 }
+
+.cart{
+  background: transparent;
+  padding-left: $topbar-height/2;
+  padding-right: $topbar-height/2;
+    &:hover{
+      @include vendor(transition, all 100ms ease);
+      background: scale-color($white, $lightness: 10%);
+    }
+}
+.sticky{
+  position: fixed !important;
+  width: 100%;
+  z-index: 10000;
+}

@@ -113,3 +113,7 @@ app.controller('legendController', function ($scope, $modal, $log) {
 
     };
 });
+
+app.controller('TopBarCtrl', function ($scope) {
+
+});
