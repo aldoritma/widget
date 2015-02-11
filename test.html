@@ -1,0 +1,19 @@
+<script src="javascript/jquery.js"></script>
+<script>
+var input={};
+input.coupon='';
+input.tickets=[];
+var ticket={};
+ticket.event_ticket_name='Bla Bla';
+ticket.event_ticket_price=33222;
+ticket.event_ticket_qty=1;
+ticket.event_ticket_id=5499;
+input.tickets.push(ticket);
+var token=Date.now();
+var eventId='2499';
+localStorage.setItem('token',token);
+localStorage.setItem('eventId',eventId);
+$.post('http://api.loket.id:4000/api/1.0/create_booking/'+eventId+'/'+token,input,function(data){
+	window.location='/#/payment/method';
+})
+</script>

@@ -4,14 +4,14 @@
       <div class="title">
         <h4 class="text-center">Pilihlah Cara Pembayaran yang Anda Mau Pakai</h4>
       </div>
-      <div  ng-controller="paymentController" >
+      
 
         <accordion close-others="oneAtATime"  >
-          <accordion-group is-open="false"  ng-repeat="data in ocw.data">
+          <accordion-group is-open="false"  ng-repeat="data in booking.paymentlist">
 
             <accordion-heading >
-              <input type="radio" id=" {{ data.payment_method_value }}">
-              <label for=""> {{ data.payment_method_value }} </label>
+              <input ng-click="setPayment(data.payment_method_id)"  type="radio" id="payment{{ data.payment_method_id }}">
+              <label  for=""> {{ data.payment_method_value }} </label>
 
             </accordion-heading>
             <table>
@@ -22,29 +22,37 @@
                   <th width="350">Harga</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody ng-repeat="tiket in booking.tickets">
                 <tr>
-                  <td>GA IDR 500.000 (Tax Included) + Admin Fee IDR 25.000</td>
-                  <td> 2</td>
-                  <td>@ Rp 525.000,00</td>
+                  <td>{{tiket.event_ticket_name}}</td>
+                  <td> {{tiket.event_ticket_qty}}</td>
+                  <td>@{{tiket.event_ticket_price | rupiah}}</td>
                 </tr>
+                </tbody>
+                <tfoot>
                 <tr>
                   <td>Biaya Tambahan</td>
-                  <td>1</td>
-                  <td>Content Goes Here</td>
+                  <td></td>
+                  <td>{{data.payment_fee | rupiah}}</td>
                 </tr>
+                 <tr ng-show="{{data.discount}}">
+                  <td>Discount</td>
+                  <td></td>
+                  <td>{{data.discount | rupiah}}</td>
+                </tr>                
                 <tr>
                   <td>Total</td>
                   <td> </td>
-                  <td> </td>
+                  <td> {{data.totalbayar | rupiah}}</td>
                 </tr>
-              </tbody>
+                </tfoot>
+              
             </table>
           </accordion-group>
 
         </accordion>
 
-      </div>
+      
     </div>
     <div class="small-12 medium-6 medium-centered column">
       <button class="button primary expand" ui-sref="payment.profile">Selanjutnya</button>

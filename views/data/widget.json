@@ -1,44 +1,131 @@
-{"widget":
-  {"http_response":[
-      { "is_ok": true,
-        "is_success": true,
-        "is_redirection": false,
-        "is_redirect": false,
-        "is_forbidden": false,
-        "is_not_found": false,
-        "is_client_error": false,
-        "is_server_error": false }
-  ]},
-  "data":[
-  { "payment_id": "1444",
-    "payment_method_id": "5",
-    "payment_method_info": null,
-    "payment_method_info2": "9",
-    "payment_method_info3": null,
-    "payment_status": "1",
-    "payment_method_key": "ONLINE",
-    "payment_method_value": "Veritrans"
-  },
-  { "payment_id": "1445",
-    "payment_method_id": "4",
-    "payment_method_info": "PT. Global Loket Sejahtera\r\nBANK : BCA (Branch Mall Pondok Indah)\r\nAccount : 731.033.7344 \r\n",
-    "payment_method_info2": null,
-    "payment_method_info3": null,
-    "payment_status": "0",
-    "payment_method_key": "OFFLINE",
-    "payment_method_value": "Bank Transfer"
-    },
-    { "payment_id": "1446",
-      "payment_method_id": "9",
-      "payment_method_info": "",
-      "payment_method_info2": null,
-      "payment_method_info3": null,
-      "payment_status": "0",
-      "payment_method_key": "ONLINE",
-      "payment_method_value": "VA Permata"
-     }
-    ],
-      "inquiry":{
-        "status_message":"success"
-      }
+{
+    "total": 33222,
+    "discount": 0,
+    "tickets": [{
+        "event_ticket_name": "Bla Bla",
+        "event_ticket_price": "33222",
+        "event_ticket_qty": "1",
+        "event_ticket_id": "5499"
+    }],
+    "paymentlist": [{
+        "payment_id": "1278",
+        "payment_method_id": "5",
+        "payment_method_info": "",
+        "payment_method_info2": "1",
+        "payment_method_info3": null,
+        "payment_status": "1",
+        "payment_method_key": "ONLINE",
+        "payment_method_value": "Veritrans",
+        "payment_fee": 3196,
+        "discount": 0,
+        "totalbayar": 36418
+    }, {
+        "payment_id": "1279",
+        "payment_method_id": "1",
+        "payment_method_info": "",
+        "payment_method_info2": null,
+        "payment_method_info3": null,
+        "payment_status": "0",
+        "payment_method_key": "OFFLINE",
+        "payment_method_value": "CASH",
+        "payment_fee": 0,
+        "discount": 0,
+        "totalbayar": 33222
+    }, {
+        "payment_id": "1280",
+        "payment_method_id": "4",
+        "payment_method_info": "Account Holder Full Name (nama lengkap pemegang rekening)\r\nBank Name (nama bank)\r\nBank Account number (nomor rekening)",
+        "payment_method_info2": null,
+        "payment_method_info3": null,
+        "payment_status": "1",
+        "payment_method_key": "OFFLINE",
+        "payment_method_value": "Bank Transfer",
+        "payment_fee": 5000,
+        "discount": 0,
+        "totalbayar": 38222
+    }, {
+        "payment_id": "1281",
+        "payment_method_id": "9",
+        "payment_method_info": "",
+        "payment_method_info2": null,
+        "payment_method_info3": null,
+        "payment_status": "1",
+        "payment_method_key": "ONLINE",
+        "payment_method_value": "VA Permata",
+        "payment_fee": 5000,
+        "discount": 0,
+        "totalbayar": 38222
+    }, {
+        "payment_id": "1282",
+        "payment_method_id": "11",
+        "payment_method_info": "",
+        "payment_method_info2": null,
+        "payment_method_info3": null,
+        "payment_status": "0",
+        "payment_method_key": "ONLINE",
+        "payment_method_value": "Clickpay Mandiri",
+        "payment_fee": 5000,
+        "discount": 0,
+        "totalbayar": 38222
+    }, {
+        "payment_id": "1283",
+        "payment_method_id": "12",
+        "payment_method_info": "",
+        "payment_method_info2": null,
+        "payment_method_info3": null,
+        "payment_status": "0",
+        "payment_method_key": "ONLINE",
+        "payment_method_value": "BRI Epay",
+        "payment_fee": 5000,
+        "discount": 0,
+        "totalbayar": 38222
+    }, {
+        "payment_id": "1284",
+        "payment_method_id": "13",
+        "payment_method_info": "",
+        "payment_method_info2": null,
+        "payment_method_info3": null,
+        "payment_status": "0",
+        "payment_method_key": "ONLINE",
+        "payment_method_value": "BRI Mocash",
+        "payment_fee": 2500,
+        "discount": 0,
+        "totalbayar": 35722
+    }, {
+        "payment_id": "1285",
+        "payment_method_id": "14",
+        "payment_method_info": "",
+        "payment_method_info2": null,
+        "payment_method_info3": null,
+        "payment_status": "0",
+        "payment_method_key": "ONLINE",
+        "payment_method_value": "BCA Klikpay",
+        "payment_fee": 1500,
+        "discount": 0,
+        "totalbayar": 34722
+    }, {
+        "payment_id": "1426",
+        "payment_method_id": "15",
+        "payment_method_info": null,
+        "payment_method_info2": "0",
+        "payment_method_info3": null,
+        "payment_status": "0",
+        "payment_method_key": "ONLINE",
+        "payment_method_value": "Infinitium BCA CC",
+        "payment_fee": 4262,
+        "discount": 0,
+        "totalbayar": 37484
+    }, {
+        "payment_id": "1427",
+        "payment_method_id": "16",
+        "payment_method_info": null,
+        "payment_method_info2": "0",
+        "payment_method_info3": null,
+        "payment_status": "0",
+        "payment_method_key": "ONLINE",
+        "payment_method_value": "Speedorder",
+        "payment_fee": 4262,
+        "discount": 0,
+        "totalbayar": 37484
+    }]
 }

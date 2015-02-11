@@ -1,62 +1,69 @@
 <!-- default is for atm -->
-
+<div class="alert alert-block alert-danger fade in" id="error_message">
+    <div id="message"></div>
+</div>
 <div class="row">
-  <div class="small-12 column">
-    <h4 class="subheader">Data Diri</h4>
-    <hr>
-  </div>
+    <div class="small-12 column">
+        <h4 class="subheader">Data Diri</h4>
+        <hr>
+    </div>
 </div>
 <div class="content-container">
-      <form>
+    
         <div class="row">
-          <div class="small-12 medium-6 column">
-            <label>Nama Depan</label>
-            <input type="text" placeholder="name" class="radius"/>
-          </div>
-          <div class="small-12 medium-6 column">
-            <label>Nama Belakang</label>
-            <input type="text" placeholder="Nama Belakang" class="radius"/>
-          </div>
+            <div class="small-12 medium-6 column">
+                <label>Nama Depan</label>
+                <input type="text" placeholder="name" id="firstname" class="radius" />
+            </div>
+            <div class="small-12 medium-6 column">
+                <label>Nama Belakang</label>
+                <input type="text" id="lastname" placeholder="Nama Belakang" class="radius" />
+            </div>
         </div>
         <div class="row">
-          <div class="small-12 medium-6 column">
-            <label>Email</label>
-            <input type="text" placeholder="Email" class="radius"/>
-          </div>
-          <div class="small-12 medium-6 column">
-            <label>Verifikasi Email</label>
-            <input type="text" placeholder="Verifikasi Email" class="radius"/>
-          </div>
+            <div class="small-12 medium-6 column">
+                <label>Email</label>
+                <input type="text" placeholder="Email" id="email" class="radius" />
+            </div>
+            <div class="small-12 medium-6 column">
+                <label>Verifikasi Email</label>
+                <input type="text" placeholder="Verifikasi Email" id="reemail" class="radius" />
+            </div>
         </div>
         <div class="row">
-          <div class="small-12 medium-6 column">
-            <label>Nomor Identitas</label>
-            <input type="text" placeholder="Email" class="radius"/>
-          </div>
-          <div class="small-12 medium-6 column">
-            <label>Nomor HP</label>
-            <input type="text" placeholder="Verifikasi Email" class="radius"/>
-          </div>
-        </div><br/><br/>
-        <div class="row">
-          <div class="small-12 column">
-            <label>
-              <h5 class="subheader">Simpan Data Pribadi</h5>
-              <hr/>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"/>
-              <label for="pokemonRed">Ya</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"/>
-              <label for="pokemonBlue">Tidak</label>
-            </label>
-          </div>
+            <div class="small-12 medium-6 column">
+                <label>Nomor Identitas</label>
+                <input type="text" placeholder="Email" class="radius" id="noindentitas" />
+            </div>
+            <div class="small-12 medium-6 column">
+                <label>Nomor HP</label>
+                <input type="text" placeholder="Verifikasi Email" id="handphone" class="radius" />
+            </div>
         </div>
+        <br/>
+        <br/>
         <div class="row">
-          <div class="small-12 medium-6 column">
-            <button class="button expand secondary"  ui-sref="payment.method">Kembali</button>
-          </div>
-          <div class="small-12 medium-6 column">
-            <button class="button expand" ui-sref="payment.thanks">Selesai</button>
-          </div>
+            <div class="small-12 column">
+                <label>
+                    <h5 class="subheader">Simpan Data Pribadi</h5>
+                    <hr/>
+                    <input type="radio" name="pokemon" value="Red" id="pokemonRed" />
+                    <label for="pokemonRed">Ya</label>
+                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" />
+                    <label for="pokemonBlue">Tidak</label>
+                </label>
+            </div>
         </div>
-      </form>
+            <div ng-include="views/customform.html"></div>
+            <div ng-include="paymentform"></div>
+        
+        <div class="row">
+            <div class="small-12 medium-6 column">
+                <button class="button expand secondary" ui-sref="payment.method">Kembali</button>
+            </div>
+            <div class="small-12 medium-6 column">
+                <button class="button expand" ui-sref="payment.thanks">Selesai</button>
+            </div>
+        </div>
+
 </div>
